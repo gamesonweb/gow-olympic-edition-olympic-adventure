@@ -22,3 +22,5 @@ Concours Games On Web 2024 effectué dans le cadre du Projet d'année L3I MIAGE 
 - SEF Ahmed : ahmed.sef@etu.univ-amu.fr
 - VAUCLARE Clément : clement.vauclare@etu.univ-amu.fr
 - SARR Serigne Cheikh Mback : serigne-cheikh-mback.sarr@etu.univ-amu.fr
+
+Nous vous remercions vivement pour votre intérêt et espérons sincèrement que notre jeu vous plaira !
