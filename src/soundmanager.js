@@ -3,7 +3,6 @@ import { AssetsManager, Sound } from "@babylonjs/core";
 
 import music1Url from "../assets/music/menuTheme.mp3";
 import music2Url from "../assets/music/gameMusic.mp3";
-import music3Url from "../assets/music/mixkit-musical-game-over-959.wav"; //From Mixkit website
 
 class SoundManager {
 
@@ -62,7 +61,6 @@ class SoundManager {
   
         const music1Data = assetsManager.addBinaryFileTask("music1", music1Url);
         const music2Data = assetsManager.addBinaryFileTask("music2", music2Url);
-        const music3Data = assetsManager.addBinaryFileTask("music3", music3Url);
   
         // after all tasks done, set up particle system
         assetsManager.onFinish = (tasks) => {
@@ -70,7 +68,6 @@ class SoundManager {
   
           this.#musics[this.Musics.START_MUSIC] = new Sound("music1", music1Data.data, GlobalManager.scene, undefined, { loop: true, autoplay: false, volume: 0.4 });
           this.#musics[this.Musics.GAME_MUSIC] = new Sound("music2", music2Data.data, GlobalManager.scene, undefined, { loop: true, autoplay: false, volume: 0.4 });
-          this.#musics[this.Musics.GAMEOVER_MUSIC] = new Sound("music3", music3Data.data, GlobalManager.scene, undefined, { loop: false, autoplay: false, volume: 0.4 });
   
           resolve(true);
         }
